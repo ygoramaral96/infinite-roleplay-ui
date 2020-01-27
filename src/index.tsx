@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Route, HashRouter as Router } from 'react-router-dom';
 import App from './App';
 import PageHelp from './pages/page-help/index';
+import './index.scss';
 
 const routing = (
   <Router>

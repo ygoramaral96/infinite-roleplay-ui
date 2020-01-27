@@ -1,0 +1,32 @@
+.helpPage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%, -50%) ;
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+    width: 80%;
+    height: auto;
+    color: #fff;
+    font-family: 'sofia_proregular';
+    font-size: 16px;
+}
+
+.glassBg {
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+	background-color: rgba(0, 0, 0, .25);
+	backdrop-filter: blur(10px);
+}
+
+.header {
+	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+	background-color: rgba(0, 0, 0, .25);
+	backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-family: 'sofia_probold';
+}
