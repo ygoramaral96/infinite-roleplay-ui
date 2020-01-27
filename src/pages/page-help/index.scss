@@ -17,16 +17,27 @@
 
 .glassBg {
 	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
-	background-color: rgba(0, 0, 0, .25);
-	backdrop-filter: blur(10px);
+	background-color: rgba(29, 29, 29, .5);
+	backdrop-filter: blur(20px);
 }
 
 .header {
 	box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
-	background-color: rgba(0, 0, 0, .25);
-	backdrop-filter: blur(10px);
+	background-color: rgba(29, 29, 29, .2);
+	backdrop-filter: blur(20px);
 }
 
 h1 {
     font-family: 'sofia_probold';
+    color: #E9BA54;
+}
+
+.categoryButton {
+    border: solid 1px #FFF09E;
+    padding: 10px;
+    font-family: 'sofia_probold';
+    text-transform: uppercase;
+    font-size: 16px;
+    color: hsla(0,0%,100%,.8);
+    background-color: hsla(0,0%,100%,0);
 }

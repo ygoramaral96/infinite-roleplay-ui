@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import { Grid } from 'semantic-ui-react';
+import { Grid, Segment, Button, Icon, Divider } from 'semantic-ui-react';
 import './index.scss';
-import { IoMdClose } from 'react-icons/io';
 
 // import { Container } from './styles';
 
@@ -16,18 +15,21 @@ export default class PageHelp extends Component {
             <h1>Central de Ajuda</h1>
           </Grid.Column>
           <Grid.Column width={1} textAlign="right">
-            <h1><IoMdClose /></h1>
+            <Button icon="close" />
           </Grid.Column>
         </Grid.Row>
+
         <Grid.Row>
           <Grid.Column width={5} stretched>
             <Grid.Row>
-              <span>Comandos</span>
-            </Grid.Row>
-            <Grid.Row>
-              <span>F.A.Q.</span>
+              <button type="button" className="categoryButton">Comandos</button>
+              <Divider clearing />
+              <button type="button" className="categoryButton">F.A.Q.</button>
+              <Divider clearing />
+              <button type="button" className="categoryButton">Regras</button>
             </Grid.Row>
           </Grid.Column>
+
           <Grid.Column width={11}>
             <Grid.Row container>
               <p>Teste</p>
