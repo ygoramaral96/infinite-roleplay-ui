@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-     
-    </div>
-  );
+class App extends Component {
+  componentDidMount() {}
+
+  render() {
+    return (
+      <div className="App" />
+    );
+  }
 }
 
 export default App;
