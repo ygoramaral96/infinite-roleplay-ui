@@ -4,7 +4,7 @@ import './index.scss';
 
 // import { Container } from './styles';
 
-export default class PageHelp extends Component {
+export default class Help extends Component {
   componentDidMount() {}
 
   render() {

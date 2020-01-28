@@ -1,0 +1,13 @@
+:root {
+  --fontDisplay: 'sofia_proregular';
+  --fontText: 'sofia_proregular';
+}
+
+body {
+  font-family: var(--fontDisplay);
+  overflow-x: hidden;
+  overflow-y: scroll;
+  cursor: default;
+  background-color: #c4c4c4;
+  color: rgba(255, 255, 255, 0.8);
+}
