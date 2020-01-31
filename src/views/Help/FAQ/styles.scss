@@ -1,0 +1,15 @@
+#faq .accordion {
+  overflow-y: scroll;
+  height: 400px;
+}
+
+#faq .accordion .title {
+  font-family: 'Sofia Pro Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #fff;
+}
+
+#faq .accordion .content {
+  padding: 0.5em 1em 1em;
+}

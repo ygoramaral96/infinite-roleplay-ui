@@ -36,7 +36,8 @@ module.exports = {
     "@typescript-eslint/no-empty-function": "off",
     "react/state-in-constructor": "off",
     "react/no-unused-state": "off",
-    "import/extensions": "off"
+    "import/extensions": "off",
+    "react/jsx-one-expression-per-line": "off"
   },
   settings: {
     "import/parsers": {

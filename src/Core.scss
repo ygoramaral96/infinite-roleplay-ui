@@ -1,13 +1,21 @@
-:root {
-  --fontDisplay: 'sofia_proregular';
-  --fontText: 'sofia_proregular';
-}
-
 body {
-  font-family: var(--fontDisplay);
+  font-family: 'Sofia Pro Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   overflow-x: hidden;
-  overflow-y: scroll;
+  overflow-y: hidden;
   cursor: default;
   background-color: #c4c4c4;
-  color: rgba(255, 255, 255, 0.8);
+  background-repeat: no-repeat;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    background-image: url('content/images/backgrounds/background-720p.png');
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  body {
+    background-image: url('content/images/backgrounds/background-1080p.png');
+  }
 }
