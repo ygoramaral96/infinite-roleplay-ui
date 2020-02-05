@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {
-  Grid, Segment, Button, Icon, Divider, Container,
+  Grid, Icon, Divider, Container,
 } from 'semantic-ui-react';
 import './index.scss';
 
@@ -20,7 +20,7 @@ export default class Help extends Component {
               <h1>Central de Ajuda</h1>
             </Grid.Column>
             <Grid.Column width={1} textAlign="right">
-              <Button icon="close" />
+              <Icon name="close" className="exitButton" />
             </Grid.Column>
           </Grid.Row>
 

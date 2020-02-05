@@ -1,5 +1,4 @@
 import React from 'react';
-import Markdown from 'react-markdown';
 
 import './styles.scss';
 import { Container, Accordion, Icon } from 'semantic-ui-react';
