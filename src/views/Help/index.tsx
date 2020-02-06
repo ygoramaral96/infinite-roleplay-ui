@@ -1,52 +1,93 @@
-import React, { Component } from 'react';
-import {
-  Grid, Icon, Divider, Container,
-} from 'semantic-ui-react';
+import React from 'react';
+import { Container, Col, Row } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import './index.scss';
 
-import FAQ from './FAQ/index';
+import FAQ from './pages/faq/index';
 
-// import { Container } from './styles';
+type State = { currentPage: string };
 
-export default class Help extends Component {
-  componentDidMount() {}
+export default class Help extends React.Component<State> {
+  state: State;
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      currentPage: 'Commands' // props.match != undefined ? props.match.params.page : 'Home',
+    };
+    this.HandlePage = this.HandlePage.bind(this);
+    this.NavigatePage = this.NavigatePage.bind(this);
+  }
+
+  HandlePage() {
+    switch (this.state.currentPage) {
+      case 'Commands':
+        return (<h2>Comandos</h2>);
+      case 'FAQ':
+        return (<FAQ />);
+      case 'Rules':
+        return (<h2>Regras</h2>);
+      default:
+        break;
+    }
+  }
+
+  NavigatePage(page) {
+    this.setState({
+      currentPage: page
+    });
+  }
+
+  IsActive(value) {
+    return `categoryButton ${
+      value === this.state.currentPage ? 'active' : 'inactive'
+    }`;
+  }
 
   render() {
     return (
-      <Container>
-        <Grid columns={3} className="helpPage glassBg" centered>
-          <Grid.Row stretched className="header">
-            <Grid.Column width={15}>
-              <h1>Central de Ajuda</h1>
-            </Grid.Column>
-            <Grid.Column width={1} textAlign="right">
-              <Icon name="close" className="exitButton" />
-            </Grid.Column>
-          </Grid.Row>
+      <Container className="helpPage glassBg">
+        <Row className="header pt-2">
+          <Col xs="11">
+            <h1>Central de Ajuda</h1>
+          </Col>
+          <Col>
+            <FontAwesomeIcon icon={faTimes} className="exitButton" />
+          </Col>
+        </Row>
 
-          <Grid.Row>
-            <Grid.Column width={5} stretched className="divider-border-right">
-              <Grid.Row>
-                <button type="button" className="categoryButton">
-                  Comandos
-                </button>
-                <Divider clearing />
-                <button type="button" className="categoryButton">
-                  F.A.Q.
-                </button>
-                <Divider clearing />
-                <button type="button" className="categoryButton">
-                  Regras
-                </button>
-              </Grid.Row>
-            </Grid.Column>
-            <Grid.Column width={11} className="divider-border-left">
-              <Grid.Row>
-                <FAQ />
-              </Grid.Row>
-            </Grid.Column>
-          </Grid.Row>
-        </Grid>
+        <Row>
+          <Col xs="4" className="divider-border-right">
+            <Row className="px-4 pt-4">
+              <button
+                type="button"
+                className={this.IsActive('Commands')}
+                onClick={() => this.NavigatePage('Commands')}
+              >
+                Comandos
+              </button>
+              <button
+                type="button"
+                className={this.IsActive('FAQ')}
+                onClick={() => this.NavigatePage('FAQ')}
+              >
+                F.A.Q.
+              </button>
+              <button
+                type="button"
+                className={this.IsActive('Rules')}
+                onClick={() => this.NavigatePage('Rules')}
+              >
+                Regras
+              </button>
+            </Row>
+          </Col>
+          <Col className="divider-border-left">
+            <Row className="px-5 pt-4">{this.HandlePage()}</Row>
+          </Col>
+        </Row>
       </Container>
     );
   }

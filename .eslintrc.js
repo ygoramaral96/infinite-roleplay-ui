@@ -37,7 +37,13 @@ module.exports = {
     "react/state-in-constructor": "off",
     "react/no-unused-state": "off",
     "import/extensions": "off",
-    "react/jsx-one-expression-per-line": "off"
+    "react/jsx-one-expression-per-line": "off",
+    "react/no-array-index-key": "off",
+    "comma-dangle": "off",
+    "consistent-return": "off",
+    "react/destructuring-assignment": "off",
+    "object-shorthand": "off",
+    "@typescript-eslint/no-explicit-any": "off"
   },
   settings: {
     "import/parsers": {

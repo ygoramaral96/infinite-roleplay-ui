@@ -1,0 +1,26 @@
+#faq .accordion {
+  overflow-y: scroll;
+  height: 400px;
+}
+
+#faq .card {
+  background-color: rgba(0, 0, 0, .2);
+  border: 0px;
+  border-radius: 0px;
+  margin-bottom: 5px;
+}
+
+#faq .card .card-header {
+  font-family: 'Sofia Pro Regular', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+  background-color: rgba(0, 0, 0, .2);
+}
+
+#faq .card .card-body {
+  padding: 0.5em 1em 1em;
+}
+
+#faq .card .card-header .btn-link {
+  color: #fff;
+}
