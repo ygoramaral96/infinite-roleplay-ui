@@ -1,0 +1,172 @@
+[
+  {
+    "category": "Animações",
+    "command": "/acop",
+    "description": ""
+  },
+  {
+    "category": "Animações",
+    "command": "/afishing",
+    "description": ""
+  },
+  {
+    "category": "Animações",
+    "command": "/ajoelhar",
+    "description": ""
+  },
+  {
+    "category": "Animações",
+    "command": "/bar",
+    "description": ""
+  },
+  {
+    "category": "Animações",
+    "command": "/barra",
+    "description": ""
+  },
+  {
+    "category": "Animações",
+    "command": "/blunt",
+    "description": ""
+  },
+  {
+    "category": "Animações",
+    "command": "/cair",
+    "description": ""
+  },
+  {
+    "category": "Animações",
+    "command": "/crossarms",
+    "description": ""
+  },
+  {
+    "category": "Animações",
+    "command": "/dormir",
+    "description": ""
+  },
+  {
+    "category": "Animações",
+    "command": "/drink",
+    "description": ""
+  },
+  {
+    "category": "Banco",
+    "command": "/depositar",
+    "description": ""
+  },
+  {
+    "category": "Banco",
+    "command": "/sacar",
+    "description": ""
+  },
+  {
+    "category": "Banco",
+    "command": "/transferir",
+    "description": ""
+  },
+  {
+    "category": "Celular",
+    "command": "/atender",
+    "description": ""
+  },
+  {
+    "category": "Celular",
+    "command": "/celular",
+    "description": ""
+  },
+  {
+    "category": "Celular",
+    "command": "/desligar /des",
+    "description": ""
+  },
+  {
+    "category": "Celular",
+    "command": "/gps",
+    "description": ""
+  },
+  {
+    "category": "Chat IC",
+    "command": "/baixo",
+    "description": ""
+  },
+  {
+    "category": "Chat IC",
+    "command": "/do",
+    "description": ""
+  },
+  {
+    "category": "Chat IC",
+    "command": "/g",
+    "description": ""
+  },
+  {
+    "category": "Chat IC",
+    "command": "/me",
+    "description": ""
+  },
+  {
+    "category": "Chat OOC",
+    "command": "/b",
+    "description": ""
+  },
+  {
+    "category": "Chat OOC",
+    "command": "/pm",
+    "description": ""
+  },
+  {
+    "category": "Geral",
+    "command": "/aceitar /ac",
+    "description": ""
+  },
+  {
+    "category": "Geral",
+    "command": "/multas",
+    "description": ""
+  },
+  {
+    "category": "Geral",
+    "command": "/pagar",
+    "description": ""
+  },
+  {
+    "category": "Propriedades",
+    "command": "/entrar",
+    "description": ""
+  },
+  {
+    "category": "Propriedades",
+    "command": "/pcomprar",
+    "description": ""
+  },
+  {
+    "category": "Propriedades",
+    "command": "/ptrancar",
+    "description": ""
+  },
+  {
+    "category": "Rádio",
+    "command": "/canal",
+    "description": ""
+  },
+  {
+    "category": "Rádio",
+    "command": "/r",
+    "description": ""
+  },
+  {
+    "category": "Rádio",
+    "command": "/r2",
+    "description": ""
+  },
+  {
+    "category": "Staff",
+    "command": "/ir",
+    "description": ""
+  },
+  {
+    "category": "Staff",
+    "command": "/irveh",
+    "description": ""
+  }
+]

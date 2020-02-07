@@ -1,6 +1,10 @@
-#faq .accordion {
+#faq {
+  width: 100%;
+}
+
+#faq .content {
   overflow-y: scroll;
-  height: 400px;
+  height: 410px;
 }
 
 #faq .card {

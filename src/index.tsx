@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, HashRouter as Router } from 'react-router-dom';
 import App from './App';
-import Help from './views/Help';
+import Help from './pages/help';
 import './index.scss';
 
 const routing = (

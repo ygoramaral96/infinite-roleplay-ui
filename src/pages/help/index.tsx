@@ -2,9 +2,12 @@ import React from 'react';
 import { Container, Col, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import './index.scss';
+import './style.scss';
 
-import FAQ from './pages/faq/index';
+
+import Commands from './components/commands';
+import FAQ from './components/faq';
+import Rules from './components/rules';
 
 type State = { currentPage: string };
 
@@ -24,11 +27,11 @@ export default class Help extends React.Component<State> {
   HandlePage() {
     switch (this.state.currentPage) {
       case 'Commands':
-        return (<h2>Comandos</h2>);
+        return (<Commands />);
       case 'FAQ':
         return (<FAQ />);
       case 'Rules':
-        return (<h2>Regras</h2>);
+        return (<Rules />);
       default:
         break;
     }
