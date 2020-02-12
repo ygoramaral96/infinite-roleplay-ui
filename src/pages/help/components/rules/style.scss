@@ -4,5 +4,16 @@
 
 #rules .content {
   overflow-y: scroll;
-  height: 410px;
+}
+
+@media screen and (min-width: 1280px) {
+  #rules .content { 
+    height: 410px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  #rules .content {
+    height: 700px;
+  }
 }

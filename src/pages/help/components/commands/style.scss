@@ -5,6 +5,17 @@
 #commands .content {
   margin-top: 10px;
   overflow-y: scroll;
-  height: 360px;
   width: 100%;
+}
+
+@media screen and (min-width: 1280px) {
+  #commands .content {
+    height: 360px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  #commands .content {
+    height: 650px;
+  }
 }

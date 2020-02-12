@@ -4,7 +4,18 @@
 
 #faq .content {
   overflow-y: scroll;
-  height: 410px;
+}
+
+@media screen and (min-width: 1280px) {
+  #faq .content { 
+    height: 410px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  #faq .content {
+    height: 700px;
+  }
 }
 
 #faq .card {
